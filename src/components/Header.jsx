@@ -15,7 +15,7 @@ function Header({ onToggle, isOpen }){
           </header>
           <div className="divider" onClick={onToggle}>
             <i className={`fa-solid ${isOpen ? "fa-play fa-rotate-180" : "fa-play"}`}></i>
-            <span>Materi</span>
+            <span>Topik</span>
           </div> 
         </div>
         </>
