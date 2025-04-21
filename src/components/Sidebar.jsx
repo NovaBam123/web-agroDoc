@@ -5,7 +5,8 @@ const topics= [
     {title: 'Teknik Hidroponik', path: '/teknik'},
     {title: 'Media Tanam Hidroponik', path: '/media'},
     {title: 'Electrical Conductivity(EC), pH dan Suhu', path: '/ec'},
-    {title: 'Syarat Tumbuh', path: '/syarat-tumbuh'},
+    {title: 'Syarat Tumbuh Garlic di Indonesia', path: '/syarat-tumbuh'},
+    {title: 'Hardneck dan Softneck Garlic', path: '/hardneck-softneck'},
 ]
 
 function Sidebar({ isOpen, onToggle }){

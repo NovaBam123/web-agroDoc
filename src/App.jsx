@@ -9,10 +9,11 @@ import Teknik from './pages/Teknik'
 import MediaTanam from './pages/MediaTanam'
 import Ec from './pages/Ec'
 import SyaratTumbuh from './pages/SyaratTumbuh'
+import HardneckSoftneck from './pages/VarietasGarlic'
 
 function App() {
   const [sidebarShow, setSidebarShow] = useState(false);
-  const toggleSidebar = () => setSidebarShow(prev => !prev);
+  const toggleSidebar= ()=> setSidebarShow(prev => !prev);
   
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <Route path='/media' element={<MediaTanam />}/>
         <Route path='/ec' element={<Ec />}/>
         <Route path='/syarat-tumbuh' element={<SyaratTumbuh />}/>
+        <Route path='/hardneck-softneck' element={<HardneckSoftneck />}/>
       </Routes>
     </main>
     </>

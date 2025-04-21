@@ -28,7 +28,7 @@ function SyaratTumbuh(){
         </p>
         
         <p>
-            ⚖️ <strong>pH ideal:</strong> antara <strong>6.0–7.5</strong> untuk pertumbuhan optimal.
+            ⚖️ <strong>pH ideal:</strong> antara <strong>6.0–7.0</strong> untuk pertumbuhan optimal.
         </p>
         
         <p>
