@@ -9,7 +9,8 @@ import Teknik from './pages/Teknik'
 import MediaTanam from './pages/MediaTanam'
 import Ec from './pages/Ec'
 import SyaratTumbuh from './pages/SyaratTumbuh'
-import HardneckSoftneck from './pages/VarietasGarlic'
+import HardneckSoftneck from './pages/Hardneck dan Softneck'
+import Varietas from './pages/VarietasIndonesia'
 
 function App() {
   const [sidebarShow, setSidebarShow] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Route path='/ec' element={<Ec />}/>
         <Route path='/syarat-tumbuh' element={<SyaratTumbuh />}/>
         <Route path='/hardneck-softneck' element={<HardneckSoftneck />}/>
+        <Route path='/varietas' element={<Varietas/>} />
       </Routes>
     </main>
     </>

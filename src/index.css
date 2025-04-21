@@ -147,13 +147,28 @@ main .content {
     .content.ec h4, p{
         margin: 10px 0;
     }
-    .content.varietas p{
-        margin: 5px 0px 0px;
+    .hardneck-softneck ul:nth-of-type(odd){
+        background: lightgreen;
     }
-    
+    .hardneck-softneck ul:nth-of-type(even){
+        background: yellow;
+    }
+    .hardneck-softneck li{
+        margin-left: 20px;
+    }
+    .content.varietas ul{
+        margin-top: 15px;
+    }
+    .content.varietas ul:nth-of-type(odd){
+        margin: 10px 0px 0px;
+        background: lightgreen;
+    }
+    .content.varietas ul:nth-of-type(even){
+        background: yellow;
+    }
     .content.varietas li{
-        list-style: circle;
-        margin-left: 18px;
+        list-style: disc;
+        margin-left: 45px;
     }
     .content .satuan{
         display: flex;
