@@ -9,7 +9,7 @@ function HardneckSoftneck(){
                     <li>Umur panen: memerlukan waktu hingga 6-8bulan.</li>
                     <li>Memiliki batang tengah yang keras (scape) yang tumbuh dari bagian tengah umbi.</li>
                     <li>Umbi dan siung berukuran besar, namun jumlah siung berjumlah sedikit rata-rata ±10siung per-umbi.</li>
-                    <li>hanya tumbuh dg daerah yang memiliki 4 musim karena memerlukan musim dingin extrem untuk pembentukan umbi.</li>
+                    <li>Hanya tumbuh dg daerah yang memiliki 4 musim karena memerlukan musim dingin extrem untuk memecah dormansi calon benih(siung) pada umbi.</li>
                 
             </ul>
             <ul>

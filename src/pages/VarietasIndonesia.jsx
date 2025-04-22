@@ -12,7 +12,7 @@ function Varietas(){
 
             <ul><strong>02. 🧄Lumbu Kuning:</strong>
                 <li>Umbi berwarna putih kekuningan.</li>
-                <li>Jumlah siung berkisar(12-10) siung per umbi.</li>
+                <li>Jumlah siung berkisar(10-12) siung per umbi.</li>
                 <li>Rata-rata hasil: Sekitar 8-10 ton per hektar</li>
             </ul>
 

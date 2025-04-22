@@ -86,12 +86,55 @@ main .content {
     object-fit: cover;
     border: 1px solid black;
 }
+.content.curing ul{
+    margin: 10px 5px;
+}
+.content.curing li{
+    margin-left: 20px;
+}
+.content.curing ul:nth-of-type(odd){
+    background: lightgreen;
+    padding: 5px;
+}
+.content.curing ul:nth-of-type(even){
+    background: yellow;
+    padding: 5px;
+}
 
 .features li {
     list-style: none;
 }
 
+table{
+    margin-top:15px;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
+table caption{
+    font-weight: bold;
+    margin: 10px 0;
+}
+thead tr th:nth-of-type(1){
+    width: 100px;
+}
+thead tr th{
+    border-spacing: 20px;
+    width: 40%;
+    max-width: 250px;
+    border: 1px solid black;
+    padding: 8px 20px;
+    background: #1b1c4b;
+    color: white;
+}
+tbody tr td{
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 420px) {
+    html, body{
+        overflow-x: hidden;
+    }
     .sidebar {
         position: fixed;
         top: 10;
@@ -116,7 +159,7 @@ main .content {
     header, 
     main .content, 
     .divider{
-        padding: 0 5px 0 20px;
+        padding: 0 15px;
     }
     header {
         display: flex;

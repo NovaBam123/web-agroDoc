@@ -7,7 +7,8 @@ const topics= [
     {title: 'Electrical Conductivity(EC), pH dan Suhu', path: '/ec'},
     {title: 'Syarat Tumbuh Garlic di Indonesia', path: '/syarat-tumbuh'},
     {title: 'Hardneck dan Softneck Garlic', path: '/hardneck-softneck'},
-    {title: 'Varietas Bawang Putih di Indonesia', path: '/varietas'}
+    {title: 'Varietas Bawang Putih di Indonesia', path: '/varietas'},
+    {title: 'Proses Pasca Panen dan Curing Garlic', path: '/proses-curing'},
 ]
 
 function Sidebar({ isOpen, onToggle }){

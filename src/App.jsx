@@ -11,6 +11,7 @@ import Ec from './pages/Ec'
 import SyaratTumbuh from './pages/SyaratTumbuh'
 import HardneckSoftneck from './pages/Hardneck dan Softneck'
 import Varietas from './pages/VarietasIndonesia'
+import ProsesCuring from './pages/Panen'
 
 function App() {
   const [sidebarShow, setSidebarShow] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <Route path='/syarat-tumbuh' element={<SyaratTumbuh />}/>
         <Route path='/hardneck-softneck' element={<HardneckSoftneck />}/>
         <Route path='/varietas' element={<Varietas/>} />
+        <Route path='/proses-curing' element={<ProsesCuring/>}/>
       </Routes>
     </main>
     </>
