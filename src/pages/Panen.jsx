@@ -71,7 +71,7 @@ function PanenDanCuring(){
             </ul>
             
             <table>
-                    <caption>Kadar Air ideal(Setalah Curing)</caption>
+                    <caption>Kadar Air ideal(Setelah Curing)</caption>
                 <thead>
                     <tr>
                         <th>Tujuan pemakaian</th>
