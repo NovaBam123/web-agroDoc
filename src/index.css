@@ -67,7 +67,7 @@ main .content {
     margin-bottom: 20px;
 }
 
-.content p {
+.content p, h4 {
     margin-top: 10px;
 }
 
@@ -86,10 +86,10 @@ main .content {
     object-fit: cover;
     border: 1px solid black;
 }
-.content.curing ul{
+.content ul{
     margin: 10px 5px;
 }
-.content.curing li{
+.content li{
     margin-left: 20px;
 }
 .content.curing ul:nth-of-type(odd){
