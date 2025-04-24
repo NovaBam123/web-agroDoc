@@ -1,8 +1,9 @@
 
-function Header({ onToggle, isOpen , onSelectKomoditas}){
+function Header({ onToggle, isOpen , onSelectKomoditas, onToggleTheme, currentTheme}){
     
     return (
         <>
+          
           <div className="header-container">
           <header>
             <h1>Agro docs</h1>
@@ -18,12 +19,15 @@ function Header({ onToggle, isOpen , onSelectKomoditas}){
               </select>
             </label>
           </header>
-          <div className="divider" onClick={onToggle}>
-            <i className={`fa-solid ${isOpen ? "fa-play fa-rotate-180" : "fa-play"}`}></i>
+          <div className="divider">
+            <i onClick={onToggle} className={`fa-solid ${isOpen ? "fa-play fa-rotate-180" : "fa-play"}`}></i>
             <span>Topik</span>
-            
+            <button onClick={onToggleTheme} className="theme-toggle">
+              {currentTheme=== 'light' ? '🌙 Dark' : '☀️ Light'}
+            </button>
           </div> 
         </div>
+        
         </>
     )
 }

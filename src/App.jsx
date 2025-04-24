@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './index.css'
-import './App.css'
+import './darkmode.css'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
 import Home from './pages/garlic/Home'
@@ -37,37 +37,44 @@ const topicsData= {
 function App() {
   const [sidebarShow, setSidebarShow] = useState(false);
   const [selectedKomoditas, setSelectedKomoditas]= useState('garlic');
+  const [theme, setTheme]= useState('light');
   const toggleSidebar= ()=> setSidebarShow(prev => !prev);
-
+  const toggleTheme= ()=> setTheme(prev=> prev=== 'light'? 'dark': 'light');
+  
   return (
     <>
-    <Header 
-      onToggle={toggleSidebar} 
-      isOpen={sidebarShow} 
-      onSelectKomoditas={setSelectedKomoditas}/>
-    
-    <main>
-      <Sidebar 
+    <div className={theme}>
+      <Header 
         onToggle={toggleSidebar} 
         isOpen={sidebarShow} 
-        topics={topicsData[selectedKomoditas]}  
+        onSelectKomoditas={setSelectedKomoditas}
+        onToggleTheme= {toggleTheme}
+        currentTheme= {theme}
       />
+      
+      <main>
+        <Sidebar 
+          onToggle={toggleSidebar} 
+          isOpen={sidebarShow} 
+          topics={topicsData[selectedKomoditas]}  
+        />
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/teknik' element={<Teknik />} />
-        <Route path='/media' element={<MediaTanam />}/>
-        <Route path='/ec' element={<Ec />}/>
-        <Route path='/syarat-tumbuh' element={<SyaratTumbuh />}/>
-        <Route path='/hardneck-softneck' element={<HardneckSoftneck />}/>
-        <Route path='/varietas' element={<Varietas />} />
-        <Route path='/proses-curing' element={<ProsesCuring />}/>
-        <Route path='/vernalisasi' element={<Vernalisasi />}/>
-        
-        <Route path='/jagung-pendahuluan' element={ <JagungPendahuluan /> }/>
-        <Route path='/jagung-syarat-tumbuh' element={<SyaratTumbuhJagung />}/>
-      </Routes>
-    </main>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/teknik' element={<Teknik />} />
+          <Route path='/media' element={<MediaTanam />}/>
+          <Route path='/ec' element={<Ec />}/>
+          <Route path='/syarat-tumbuh' element={<SyaratTumbuh />}/>
+          <Route path='/hardneck-softneck' element={<HardneckSoftneck />}/>
+          <Route path='/varietas' element={<Varietas />} />
+          <Route path='/proses-curing' element={<ProsesCuring />}/>
+          <Route path='/vernalisasi' element={<Vernalisasi />}/>
+          
+          <Route path='/jagung-pendahuluan' element={ <JagungPendahuluan /> }/>
+          <Route path='/jagung-syarat-tumbuh' element={<SyaratTumbuhJagung />}/>
+        </Routes>
+      </main>
+    </div>
     </>
   )
 }

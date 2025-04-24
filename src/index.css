@@ -18,7 +18,7 @@ body {
 }
 .header-container{
     position: sticky;
-    top: 8px;
+    top: 0;
     background: #fff;
     z-index: 100;
 }
@@ -57,6 +57,11 @@ header label select {
 }
 .divider i{
     margin: 3px 10px;
+}
+.divider button{
+    margin-top: 2px;
+    margin-left: 230px;
+    padding: 0 10px;
 }
 
 .sidebar {
