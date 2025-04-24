@@ -187,6 +187,20 @@ tbody tr td{
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    bottom: 5px;
+    right: 10px;
+    z-index: 200;
+}
+
 @media (max-width: 420px) {
     html, body{
         overflow-x: hidden;
