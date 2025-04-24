@@ -3,8 +3,7 @@ function Header({ onToggle, isOpen , onSelectKomoditas, onToggleTheme, currentTh
     
     return (
         <>
-          
-          <div className="header-container">
+        <div className="header-container">
           <header>
             <h1>Agro docs</h1>
             <label htmlFor="tanaman">Komoditas
