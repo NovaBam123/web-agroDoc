@@ -1,9 +1,14 @@
+.dark{
+    background-color: #37373e;
+    color: #ffffff;
+}
+
 .dark .header-container {
     background-color: #37373e;
-    color: white;
+    color: #ffffff;
 }
 .dark header{
-    background-color: transparent;
+    background-color:  #37373e;
     color: #ffffff;
 }
   
