@@ -39,8 +39,8 @@ header {
 }
 
 .sidebar {
-    padding: 0 20px;
-    width: 250px;
+    padding: 10px 20px;
+    width: 300px;
     border-right: 2px solid #e2e2e2;
     min-height: 100vh;
 }
@@ -51,6 +51,8 @@ header {
 
 .sidebar a {
     text-decoration: none;
+    color: black;
+    margin-top: 10px;
 }
 
 main {

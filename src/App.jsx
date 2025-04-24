@@ -1,29 +1,58 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './index.css'
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
 import Header from './components/Header'
 import Sidebar from './components/Sidebar'
-import Teknik from './pages/Teknik'
-import MediaTanam from './pages/MediaTanam'
-import Ec from './pages/Ec'
-import SyaratTumbuh from './pages/SyaratTumbuh'
-import HardneckSoftneck from './pages/Hardneck dan Softneck'
-import Varietas from './pages/VarietasIndonesia'
-import ProsesCuring from './pages/Panen'
-import Vernalisasi from './pages/Vernalisasi'
+import Home from './pages/garlic/Home'
+import Teknik from './pages/garlic/Teknik'
+import MediaTanam from './pages/garlic/MediaTanam'
+import Ec from './pages/garlic/Ec'
+import SyaratTumbuh from './pages/garlic/SyaratTumbuh'
+import HardneckSoftneck from './pages/garlic/Hardneck dan Softneck'
+import Varietas from './pages/garlic/VarietasIndonesia'
+import ProsesCuring from './pages/garlic/Panen'
+import Vernalisasi from './pages/garlic/Vernalisasi'
+import JagungPendahuluan from './pages/jagung/JagungPendahuluan'
+import SyaratTumbuhJagung from './pages/jagung/SyaratTumbuh'
+
+const topicsData= {
+  garlic:[
+      {title: 'Pengertian Hidroponik', path: '/'},
+      {title: 'Teknik Hidroponik', path: '/teknik'},
+      {title: 'Media Tanam Hidroponik', path: '/media'},
+      {title: 'Electrical Conductivity(EC), pH dan Suhu', path: '/ec'},
+      {title: 'Syarat Tumbuh Garlic di Indonesia', path: '/syarat-tumbuh'},
+      {title: 'Hardneck dan Softneck Garlic', path: '/hardneck-softneck'},
+      {title: 'Varietas Bawang Putih di Indonesia', path: '/varietas'},
+      {title: 'Proses Pasca Panen dan Curing Garlic', path: '/proses-curing'},
+      {title: 'Dormansi dan Proses Vernalisasi pada Garlic', path: '/vernalisasi'},
+  ],
+  jagung: [
+      {title: 'Pendahuluan', path: '/jagung-pendahuluan'},
+      {title: 'Syarat Tumbuh Jagung', path: '/jagung-syarat-tumbuh'}
+  ]
+}
 
 function App() {
   const [sidebarShow, setSidebarShow] = useState(false);
+  const [selectedKomoditas, setSelectedKomoditas]= useState('garlic');
   const toggleSidebar= ()=> setSidebarShow(prev => !prev);
-  
+
   return (
     <>
-    <Header onToggle={toggleSidebar} isOpen={sidebarShow}/>
+    <Header 
+      onToggle={toggleSidebar} 
+      isOpen={sidebarShow} 
+      onSelectKomoditas={setSelectedKomoditas}/>
     
     <main>
-      <Sidebar isOpen={sidebarShow} onToggle={toggleSidebar}/>
+      <Sidebar 
+        onToggle={toggleSidebar} 
+        isOpen={sidebarShow} 
+        topics={topicsData[selectedKomoditas]}  
+      />
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/teknik' element={<Teknik />} />
@@ -34,6 +63,9 @@ function App() {
         <Route path='/varietas' element={<Varietas />} />
         <Route path='/proses-curing' element={<ProsesCuring />}/>
         <Route path='/vernalisasi' element={<Vernalisasi />}/>
+        
+        <Route path='/jagung-pendahuluan' element={ <JagungPendahuluan /> }/>
+        <Route path='/jagung-syarat-tumbuh' element={<SyaratTumbuhJagung />}/>
       </Routes>
     </main>
     </>

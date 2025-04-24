@@ -1,5 +1,5 @@
 
-function Header({ onToggle, isOpen }){
+function Header({ onToggle, isOpen , onSelectKomoditas}){
     
     return (
         <>
@@ -7,9 +7,14 @@ function Header({ onToggle, isOpen }){
           <header>
             <h1>Agro docs</h1>
             <label htmlFor="tanaman">Komoditas
-              <select name="tanaman" id="tanaman">
-                <option value="">Garlic</option>
-                <option value="">Jagung</option>
+              <select 
+              name="tanaman" 
+              id="tanaman"
+              onChange={e=> onSelectKomoditas(e.target.value)}
+              onClick={onToggle}
+              >
+                <option value="garlic">Garlic</option>
+                <option value="jagung">Jagung</option>
               </select>
             </label>
           </header>
