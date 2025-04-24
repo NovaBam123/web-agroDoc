@@ -21,6 +21,7 @@ function Header({ onToggle, isOpen , onSelectKomoditas}){
           <div className="divider" onClick={onToggle}>
             <i className={`fa-solid ${isOpen ? "fa-play fa-rotate-180" : "fa-play"}`}></i>
             <span>Topik</span>
+            
           </div> 
         </div>
         </>

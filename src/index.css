@@ -26,9 +26,30 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 20px 40px;
 }
-    
+label{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    width: 50%;
+    max-width: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100px;
+}
+header label select {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 50%;
+    min-width: 100px;
+    margin-left: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    &:focus{
+        box-shadow: inset 2px 2px 4px black;
+    }
+}
 .divider {
     width: 110%;
     height: 25px;
@@ -43,6 +64,22 @@ header {
     width: 300px;
     border-right: 2px solid #e2e2e2;
     min-height: 100vh;
+}
+.sidebar p{
+    margin-bottom: 20px;
+}
+.sidebar p:hover{
+    background: skyblue;
+}
+
+.sidebar p::before{
+    content: '';
+    position: absolute;
+    top: 12;
+    left: 10px;
+    height: 20px;
+    width: 5px;
+    background: hotpink;
 }
 
 .sidebar .topik {
@@ -149,7 +186,9 @@ tbody tr td{
         z-index: 10;
         border-right: none;
       }
-      
+    .sidebar p{
+        margin-bottom: 10px;
+    }  
     .sidebar.show {
         transform: translateX(0%);
         left: 0;
@@ -170,13 +209,7 @@ tbody tr td{
         margin: 10px;
     }
     label{
-        margin-top: 10px;
-        font-size: 0.8rem;
-        width: 50%;
-        max-width: 140px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+       margin-right: 25px;
     }
     select{
         font-size: 0.8rem;
