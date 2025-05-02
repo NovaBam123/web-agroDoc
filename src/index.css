@@ -200,9 +200,15 @@ footer{
     html, body{
         overflow-x: hidden;
     }
+    .header-container{
+        position: fixed;
+        top: 0;
+        background: #fff;
+        z-index: 100;
+    }
     .sidebar {
         position: fixed;
-        top: 10;
+        top: 60px;
         transform: translate(-120%);
         width: 90%;
         max-width: 300px;
@@ -252,6 +258,7 @@ footer{
     }
 
     main .content{
+        margin-top: 80px;
         width: 100%;
     }
     .content h4{
