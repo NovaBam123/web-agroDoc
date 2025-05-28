@@ -148,14 +148,17 @@ main .content {
 .content li{
     margin-left: 20px;
 }
-.content.curing ul:nth-of-type(odd){
+.content.curing ul:nth-of-type(odd),
+.content.pengelompokan-benih ul:nth-of-type(odd){
     background: lightgreen;
     padding: 5px;
 }
-.content.curing ul:nth-of-type(even){
+.content.curing ul:nth-of-type(even),
+.content.pengelompokan-benih ul:nth-of-type(even){
     background: yellow;
     padding: 5px;
 }
+
 
 .features li {
     list-style: none;

@@ -15,6 +15,7 @@ import ProsesCuring from './pages/garlic/Panen'
 import Vernalisasi from './pages/garlic/Vernalisasi'
 import JagungPendahuluan from './pages/jagung/JagungPendahuluan'
 import SyaratTumbuhJagung from './pages/jagung/SyaratTumbuh'
+import PengelempokanBenih from './pages/garlic/PengelompokanBenih'
 
 const topicsData= {
   garlic:[
@@ -27,6 +28,7 @@ const topicsData= {
       {title: 'Varietas Bawang Putih di Indonesia', path: '/varietas'},
       {title: 'Proses Pasca Panen dan Curing Garlic', path: '/proses-curing'},
       {title: 'Dormansi dan Proses Vernalisasi pada Garlic', path: '/vernalisasi'},
+      {title: 'Jenis-Jenis Benih dalam Sistem Perbenihan Nasional', path: '/pengelompokan-benih'},
   ],
   jagung: [
       {title: 'Pendahuluan', path: '/jagung-pendahuluan'},
@@ -69,7 +71,9 @@ function App() {
           <Route path='/varietas' element={<Varietas />} />
           <Route path='/proses-curing' element={<ProsesCuring />}/>
           <Route path='/vernalisasi' element={<Vernalisasi />}/>
-          
+          <Route path='/pengelompokan-benih' element={<PengelempokanBenih/>}/>
+
+
           <Route path='/jagung-pendahuluan' element={ <JagungPendahuluan /> }/>
           <Route path='/jagung-syarat-tumbuh' element={<SyaratTumbuhJagung />}/>
         </Routes>

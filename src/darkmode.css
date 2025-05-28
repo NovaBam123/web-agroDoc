@@ -42,7 +42,10 @@
 .dark .content.curing ul{
     color: black;
 }
-.dark .content.varietas ul{
+.dark 
+.content.varietas,
+.content.pengelompokan-benih
+ul{
     color: black;
 }
 .dark tbody tr td{
