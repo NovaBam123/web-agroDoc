@@ -3,6 +3,7 @@ function PengelempokanBenih() {
     <>
         <div className="content pengelompokan-benih">
             <img src="https://www.dropbox.com/scl/fi/ln5mp8lwixt4lnwnpql1u/label-benih.png?rlkey=n4tk05rolkehw901zhrcyruh9&st=jhvy4y5j&raw=1" alt="gb label benih"/>
+            <img src="https://www.dropbox.com/scl/fi/b1e081npxlb28gf3bnd5t/keterangan-label-edit.jpg?rlkey=bjdi172b181xoua7z6pv33fsx&st=xhapxcaa&raw=1" alt="ket-label" />
             <h4>Pengelompokan Jenis Benih/Umbi dalam Sistem Perbenihan Nasional</h4>
              <p>🟡<strong> Benih Penjenis(Breeder Seed)</strong> (Label Kuning)</p>
             <ul>
