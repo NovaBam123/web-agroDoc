@@ -34,10 +34,10 @@ function PengelempokanBenih() {
                 <li> Pentingnya: Menjadi benih konsumsi akhir yang menjangkau petani, menentukan dan mempertahankan sifat2 unggul suatu varietas juga hasil panen di tingkat lapangan.</li>
             </ul>
             <h4>Alur Produksi Benih menurut Sistem Nasional</h4>
-            <p> → 🟡 Benih Penjenis (Breeder Seed)</p>
-            <p> → ⚪ Benih Dasar (Foundation Seed)</p>
-            <p> → 🟣 Benih Pokok (Stock Seed)</p>
-            <p> → 🔵 Benih Sebar (Extension Seed)</p>
+            <p>→ 🟡 Benih Penjenis (Breeder Seed)</p>
+            <p>→ ⚪ Benih Dasar (Foundation Seed)</p>
+            <p>→ 🟣 Benih Pokok (Stock Seed)</p>
+            <p>→ 🔵 Benih Sebar (Extension Seed)</p>
             <p>→ 🌾 Budidaya</p>
         </div>
     </>
